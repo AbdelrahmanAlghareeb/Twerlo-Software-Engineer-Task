@@ -1,7 +1,6 @@
-# docker-compose-nodejs-example-with-typescript
+# Twerlo Software Engineer task "Part of Speech"
 
 This is Software Engineer task "Part of Speech"
-
 Built in Angular and Nodejs
 
 ## To run the app on your dev pc:
