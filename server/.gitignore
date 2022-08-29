@@ -1,0 +1,9 @@
+.vagrant/
+node_modules/
+todo.txt
+*.log
+persist/
+*.bak
+web-app/.nyc_output/
+web-app/build/
+tmp/

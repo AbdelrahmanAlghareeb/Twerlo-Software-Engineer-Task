@@ -1,0 +1,18 @@
+FROM node:8-alpine
+
+WORKDIR /usr/src
+COPY package*.json ./
+COPY tsconfig.json ./
+RUN npm install
+COPY ./src ./src
+RUN npm run build
+COPY ./src/views ./build/views
+
+FROM node:8-alpine
+
+WORKDIR /usr/src
+COPY package*.json ./
+RUN npm install --only=production
+COPY --from=0 /usr/build ./build
+EXPOSE 3000
+CMD npm start

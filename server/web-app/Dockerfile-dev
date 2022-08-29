@@ -1,0 +1,15 @@
+FROM node:8
+
+WORKDIR /usr
+COPY package*.json ./
+COPY nodemon.json ./
+COPY tsconfig.json ./
+COPY ./db/TestData.json ./db/TestData.json
+COPY ./src/views ./build/views
+
+EXPOSE 3000
+
+CMD npm config set cache-min 9999999 \
+    && npm install \
+    && npm run build \
+    && npm run start

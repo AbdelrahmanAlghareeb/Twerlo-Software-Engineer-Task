@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  web-app:
+    image: web-app
+    build: 
+      context: ./web-app
+      dockerfile: Dockerfile-dev
+    container_name: web-app
+    volumes:
+     - ./tmp/npm:/root/.npm:z
+     - ./web-app/src:/usr/src/src:z
+    ports:
+     - "3000:3000"
+    environment:
+     - PORT=3000
+     - NODE_ENV=development
+    restart: always
+
