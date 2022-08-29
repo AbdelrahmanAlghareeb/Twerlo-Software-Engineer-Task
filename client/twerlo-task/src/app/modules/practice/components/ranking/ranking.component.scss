@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 200px 0;
+  text-align: center;
+  p {
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  span {
+    color: #07202d;
+    font-size: 60px;
+  }
+  a {
+    font-size: 20px;
+    display: block;
+    background-color: #000000;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    margin: 40px auto;
+  }
+}

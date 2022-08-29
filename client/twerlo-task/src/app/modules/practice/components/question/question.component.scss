@@ -1,0 +1,25 @@
+p {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.correct{
+  background-color: #51c154;
+  color: #fff;
+}
+.wrong{
+  background-color: #c62828;
+  color: #fff;
+}
+.question {
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  padding-top: 30px;
+  .title{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .word{
+    font-size: 50px;
+    text-align: center;
+  }
+}

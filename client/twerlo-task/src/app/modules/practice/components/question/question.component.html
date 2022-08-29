@@ -1,0 +1,9 @@
+<div class="question">
+  <h5 class="title">State the type of the following word:</h5>
+  <p class="word">{{word?.word}}</p>
+</div>
+<div class="options-container">
+  <a *ngFor="let option of posTypes" class="option" (click)="checkSelection(option)" [ngClass]="{'correct' : selectedAnswer == option && answeredCorrectly , 'wrong' : selectedAnswer == option && !answeredCorrectly}">
+    <span>{{option}}</span>
+  </a>
+</div>
